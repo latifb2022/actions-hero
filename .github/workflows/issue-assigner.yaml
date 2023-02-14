@@ -1,7 +1,4 @@
 name: Issue assignment
-permissions:
-  contents: read
-  push: write
 on:
   issues:
     types: [opened]
