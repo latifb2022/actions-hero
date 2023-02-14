@@ -1,15 +1,15 @@
 name: Issue assignment
+  on:
+    issues:
+    types: [opened]
+  jobs:
+    auto-assign:
+    uns-on: ubuntu-latest
 
-    on:
-        issues:
-          types: [opened]
-    jobs:
-      auto-assign:
-      runs-on: ubuntu-latest
+  steps:
+    - name: 'Auto-assign issue'
+    uses: pozil/auto-assign-issue@v1.0.3
 
-    steps:
-      - name: 'Auto-assign issue'
-        uses: pozil/auto-assign-issue@v1.0.3
-    with:
-      repo-token: ${{ secrets.GITHUB_TOKEN }}
-      assignees: testesdapri
+  with:
+    repo-token: ${{ secrets.GITHUB_TOKEN }}
+    assignees: testesdapri
