@@ -1,4 +1,4 @@
-ame: Issue assignment
+name: Issue assignment
 on:
   issues:
     types: [opened]
