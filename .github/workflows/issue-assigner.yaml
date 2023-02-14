@@ -1,5 +1,4 @@
 name: Issue assignment
-
 on:
     issues:
         types: [opened]
